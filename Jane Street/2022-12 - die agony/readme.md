@@ -29,7 +29,9 @@ In terms of the puzzle, we don't actually know what number each of the faces rep
 
 now for tipping the die orthogonally:  
 We have a rotation matrix $A$, such that  
-$A \begin{bmatrix}a_1 & a_2 & a_3\end{bmatrix}=\begin{bmatrix}b_1 & b_2 & b_3\end{bmatrix}$  
+```math
+A \begin{bmatrix}a_1 & a_2 & a_3\end{bmatrix}=\begin{bmatrix}b_1 & b_2 & b_3\end{bmatrix}
+```
 where $a$ represents initial positions of faces and $b$ represents where they end up.
 
 Now, if we choose $a = I_3$ (In linear algebra, multiplying by $I$ is the equivalent of multiplying a scalar by 1.) The interesting thing is that $I_3$ is the first 3 columns of $D$, so if you track where the 1, 2 and 3 faces go, you can generate the rotation matricies.
