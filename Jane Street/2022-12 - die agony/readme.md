@@ -9,9 +9,9 @@ Things that I used:
 
 To start, I first needed some way to track the orientation of the die.  
 
-I set the origin to $x = y = z = 0$, and all the faces are 1 away. 
+The origin of my coordinate plane represents the center of the die, and each face has a length of 2. Therefore the minimum distance between the origin and the face is 1, along one of the axes.
 
-Although this would still work like this, actually each face just needs to be represented by one point, so I ended up with 3 orthonormal points and their negatives  
+Although everything continuing would still work like this, each face just needs to be represented by one point, so I ended up with 3 orthonormal points and their negatives.  
 
 For the sake of visualization, take a standard die and place it such that one is pointing right, the center of that face will be at $(1,0,0)$. Put 2 pointing away from you. Its position will be $(0,1,0)$. 3 should be facing up at the $(0,0,1)$ position. If it is 4, you have a left-handed die and need to swap the middle two columns of the following matrix:
 ```math
