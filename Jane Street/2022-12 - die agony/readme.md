@@ -15,7 +15,7 @@ Although this would still work like this, actually each face just needs to be re
 
 For the sake of visualization, take a standard die and place it such that one is pointing right, the center of that face will be at $(1,0,0)$. Put 2 pointing away from you. Its position will be $(0,1,0)$. 3 should be facing up at the $(0,0,1)$ position. If it is 4, you have a left-handed die and need to swap the middle two columns of the following matrix:
 ```math
-$D = \begin{bmatrix}
+D = \begin{bmatrix}
 1 & 0 & 0 & 0 & 0 & -1 \\
 0 & 1 & 0 & 0 & -1 & 0 \\
 0 & 0 & 1 & -1 & 0 & 0
